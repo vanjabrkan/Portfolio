@@ -1,0 +1,54 @@
+/* Main Header Styling */
+.headerAreaRoot {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px;
+  border: 1px solid gray;
+}
+
+/* Logo Styling */
+.logoRootConteiner {
+  text-align: center;
+}
+
+.logoImage {
+  width: 80px; /* promeni veličinu po želji */
+  height: auto;
+  cursor: pointer;
+}
+
+/* main Menu Styling */
+.mainMenuRootConteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.singleMenuItem {
+  font: 30px;
+  cursor: pointer;
+}
+
+/* login Button Styling */
+.loginButtonRootConteiner {
+  text-align: center;
+}
+
+.loginButton {
+  cursor: pointer;
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  user-select: none;
+  transition: 0.3s ease-out;
+}
+
+.loginButton:hover {
+  background-color: #85490d;
+  color: rgb(230, 223, 223);
+}

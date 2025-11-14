@@ -1,0 +1,12 @@
+.heroAreaRoot {
+    display: flex;
+}
+
+.leftAreaRoot {
+flex:1;
+text-align:center;
+}
+
+.rightAreaRoot {
+flex:1;
+}
