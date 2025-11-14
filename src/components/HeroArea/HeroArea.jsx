@@ -16,13 +16,13 @@ function HeroArea(props) {
 export default HeroArea;
 
 function LeftArea() {
-  const subHeader = ` Hello, I'm Vanja, a Web Developer`;
+  const subHeader = ` Hello, I'm Vanja,\n a Web Developer`;
   const subDescription = `Welcome to my portfolio. I'm a web developer focused on building clean and functional websites.`;
   //
   return (
     <div className="leftAreaRoot">
       <div className="leftAreaSubConteiner">
-        <div className="leftAreaSubHeader">{subHeader}</div>
+        <div className="leftAreaSubHeader" style={{ whiteSpace: 'pre-line' }}>{subHeader}</div>
         <div className="leftAreaSubDescription">{subDescription}</div>
         <div className="contactButton">
           <button className="heroButton">Get in touch</button>
