@@ -1,5 +1,6 @@
 import React from "react";
 import "./heroarea.css";
+import Vanja from "../../assets/Vanja.png";
 
 function HeroArea(props) {
   return (
@@ -32,5 +33,12 @@ function LeftArea() {
 }
 
 function RightArea() {
-  return <div className="rightAreaRoot">Right Area</div>;
+  return (
+  <div className="rightAreaRoot">
+      <div className="rightAreaConteiner">
+    <img className="rightAreaImage" src={Vanja} alt="my-picture" />
+  </div>
+  </div>
+
+  );
 }

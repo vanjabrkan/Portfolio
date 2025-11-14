@@ -1,12 +1,80 @@
 .heroAreaRoot {
-    display: flex;
+  display: flex;
 }
 
 .leftAreaRoot {
-flex:1;
-text-align:center;
+  flex: 1;
+  text-align: center;
+}
+
+.leftAreaSubConteiner {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  gap: 30px;
+}
+
+.leftAreaSubHeader {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.leftAreaSubDescription {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.heroButton {
+  background: linear-gradient(79deg, #dfb0b0, #6e6c63e1);
+  color: #3d361c;
+  border: none;
+  /* Rounded corners for smooth, soft button appearance */
+  border-radius: 12px;
+  /* Inner spacing: height and width of the button */
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  /* Mouse cursor changes to pointer */
+  cursor: pointer;
+  /* Smooth animation for hover/active effects */
+  transition: all 0.3s ease;
+  /* Soft shadow that gives a slight 3D depth */
+  box-shadow: 6px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.heroButton:hover {
+  /* Button moves slightly up to create a “lifted” 3D effect */
+  transform: translateY(-2px);
+
+  /* Shadow becomes larger and softer */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.heroButton:active {
+  /* When clicking, button goes back down */
+  transform: translateY(0);
+  /* Shadow becomes smaller again */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .rightAreaRoot {
-flex:1;
+  flex: 1;
 }
+
+.rightAreaConteiner{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+    object-fit: cover;
+    width: 480px;
+    height: 390px;
+
+}
+
+.rightAreaImage{
+    width: 100%;
+    height: 100%;
+}
+
