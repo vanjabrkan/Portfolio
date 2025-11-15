@@ -2,7 +2,7 @@
 .headerAreaRoot {
   display: flex;
   justify-content: space-between;
-  padding: 17px;
+  padding: 30px;
   border: 1px solid gray;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .logoImage {
-  width: 80px; /* promeni veličinu po želji */
+  width: 90px; /* promeni veličinu po želji */
   height: auto;
   cursor: pointer;
 }

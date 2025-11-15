@@ -1,6 +1,6 @@
 import React from "react";
 import "./heroarea.css";
-import Vanja from "../../assets/Vanja.png";
+import Vanja from "../../assets/Vanja.jpg";
 
 function HeroArea(props) {
   return (

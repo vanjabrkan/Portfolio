@@ -1,0 +1,60 @@
+.featureAreaRoot {
+  margin-top: 90px;
+  background-color: rgb(95, 19, 131);
+}
+
+.featureAreaConteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureAreaHeader {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featureAreaItems {
+  display: flex;
+  justify-content:center;   /* center items horizontally */
+  align-items: center;       /* center items vertically */
+  gap: 160px;                 /* space between items */
+  flex-wrap: wrap;           /* wrap items on smaller screens */
+  text-align: left; 
+  padding-right: 90px;      
+}
+
+.LevelItemRoot {
+  width: 250px;
+  height: 300px;
+
+
+}
+
+.LevelItemImageConteiner {
+width: 190px;
+object-fit: cover;
+}
+
+.LevelItemImage {
+    height: 100%;
+    width: 100%;
+
+}
+
+.LevelItemTitle {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top:10px;
+    
+
+}
+
+.LevelItemText {
+    font-size: 18px;
+    width: 80%;
+    opacity: 0.8;
+    margin-top: 8px;
+
+}

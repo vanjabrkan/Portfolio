@@ -1,16 +1,18 @@
+
 .heroAreaRoot {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
   gap: 40px;
+
 }
 
 /* LEFT SECTION  */
 .leftAreaRoot {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content:end;
 }
 
 
@@ -21,6 +23,7 @@
   text-align: left; /* desktop */
   width: 100%;
   max-width: 550px;   
+  
 }
 
 .leftAreaSubHeader {
@@ -71,7 +74,6 @@
 .rightAreaRoot {
   flex: 1;
   display: flex;
-
 }
 
 .rightAreaConteiner {
