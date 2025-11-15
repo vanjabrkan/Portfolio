@@ -1,20 +1,17 @@
-
 .heroAreaRoot {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
   gap: 40px;
-
 }
 
 /* LEFT SECTION  */
 .leftAreaRoot {
   flex: 1;
   display: flex;
-  justify-content:end;
+  justify-content: end;
 }
-
 
 .leftAreaSubConteiner {
   display: flex;
@@ -22,8 +19,7 @@
   gap: 30px;
   text-align: left; /* desktop */
   width: 100%;
-  max-width: 550px;   
-  
+  max-width: 550px;
 }
 
 .leftAreaSubHeader {
@@ -41,33 +37,25 @@
   background: linear-gradient(79deg, #dfb0b0, #6e6c63e1);
   color: #3d361c;
   border: none;
-
   border-radius: 12px; /* Rounded corners for smooth, soft button appearance */
-  
   padding: 12px 24px; /* Inner spacing: height and width of the button */
   font-size: 16px;
   font-weight: bold;
-
-  cursor: pointer;   /* Mouse cursor changes to pointer */
-  /* Smooth animation for hover/active effects */
-  transition: all 0.3s ease;
-  /* Soft shadow that gives a slight 3D depth */
-  box-shadow: 6px 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Mouse cursor changes to pointer */
+  transition: all 0.3s ease; /* Smooth animation for hover/active effects */
+  box-shadow: 6px 3px 5px rgba(0, 0, 0, 0.2); /* Soft shadow that gives a slight 3D depth */
 }
 
 .heroButton:hover {
-  /* Button moves slightly up to create a “lifted” 3D effect */
-  transform: translateY(-2px);
-
-  /* Shadow becomes larger and softer */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(
+    -2px
+  ); /* Button moves slightly up to create a “lifted” 3D effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Shadow becomes larger and softer */
 }
 
 .heroButton:active {
-  /* When clicking, button goes back down */
-  transform: translateY(0);
-  /* Shadow becomes smaller again */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(0); /* When clicking, button goes back down */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow becomes smaller again */
 }
 
 /* RIGHT SECTION */
@@ -79,7 +67,7 @@
 .rightAreaConteiner {
   object-fit: cover;
   width: 100%;
-  max-width: 450px;  /* responsive limit */
+  max-width: 450px; /* responsive limit */
 }
 
 .rightAreaImage {
@@ -88,7 +76,6 @@
   display: block;
   object-fit: cover;
 }
-
 
 /* ========================== */
 /* RESPONSIVE FOR SMALL SCREENS */
@@ -99,9 +86,9 @@
     text-align: center; /* optional: center text for small screens */
   }
 
-  .leftAreaConteiner, 
+  .leftAreaConteiner,
   .rightAreaConteiner {
-     padding: 2rem;
+    padding: 2rem;
     width: 80%;
   }
 }
