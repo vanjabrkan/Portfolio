@@ -79,7 +79,7 @@
 
 /* ========================== */
 /* RESPONSIVE FOR SMALL SCREENS */
-@media (max-width: 700px) {
+@media (max-width: 830px) {
   .heroAreaRoot {
     flex-direction: column; /* stack left and right areas vertically */
     align-items: center; /* center horizontally */
@@ -89,6 +89,6 @@
   .leftAreaConteiner,
   .rightAreaConteiner {
     padding: 2rem;
-    width: 80%;
+    width: 100%;
   }
 }
