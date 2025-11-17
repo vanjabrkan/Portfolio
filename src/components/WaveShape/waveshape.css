@@ -1,0 +1,8 @@
+.wave-flip svg {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.elementor-shape {
+color:"#dfb0b0";
+}
