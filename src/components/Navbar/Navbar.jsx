@@ -6,9 +6,10 @@ function Header(props) {
   return (
     <div className="headerAreaRoot">
       <Logo />
+      <div className="mainMenuAndLoginButton">
       <MainMenu />
       <LoginButton />
-    </div>
+    </div> </div>
   );
 }
 
@@ -37,5 +38,5 @@ function MainMenu() {
 
 function LoginButton() {
   return <div className="loginButtonRootConteiner">
-    <div className="loginButton">Login</div></div>;
+    <button className="loginButton">Login</button></div>;
 }

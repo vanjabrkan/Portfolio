@@ -1,12 +1,5 @@
-.FooterLinksRootConteiner {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  gap: 30px;
-  padding-top: 50px;
-}
-
 .FooterText {
-    text-align: center;
-    padding-bottom: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 10px;
 }

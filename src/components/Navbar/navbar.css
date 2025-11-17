@@ -3,17 +3,27 @@
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  align-items: center;
+}
+
+.mainMenuAndLoginButton {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  gap:15px;
 }
 
 /* Logo Styling */
 .logoRootConteiner {
-  text-align: center;
+  display: flex;
+  flex: 1;
+  justify-content: start;
+  align-items: center;
 }
 
 .logoImage {
   width: 90px; /* promeni veličinu po želji */
   height: auto;
-  cursor: pointer;
 }
 
 /* main Menu Styling */
@@ -25,29 +35,42 @@
 }
 
 .singleMenuItem {
-  font: 30px;
+  font: 40px;
+    font-weight: bold;
   cursor: pointer;
 }
 
+.singleMenuItem:hover {
+  color: red
+}
 /* login Button Styling */
 .loginButtonRootConteiner {
   text-align: center;
 }
 
+
+/* Buttons */
 .loginButton {
-  cursor: pointer;
-  border: 1px solid gray;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 10px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  user-select: none;
-  transition: 0.3s ease-out;
+  background: linear-gradient(15deg, #dfb0b0, #bd8fb3e1);
+  color: #3d361c;
+  border: none;
+  border-radius: 12px; /* Rounded corners for smooth, soft button appearance */
+  padding: 8px 24px; /* Inner spacing: height and width of the button */
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer; /* Mouse cursor changes to pointer */
+  transition: all 0.3s ease; /* Smooth animation for hover/active effects */
+
 }
 
 .loginButton:hover {
-  background-color: #85490d;
-  color: rgb(230, 223, 223);
+  transform: translateY(
+    -2px
+  ); /* Button moves slightly up to create a “lifted” 3D effect */
+  
+}
+
+.loginButton:active {
+  transform: translateY(0); /* When clicking, button goes back down */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow becomes smaller again */
 }

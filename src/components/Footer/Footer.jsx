@@ -15,7 +15,7 @@ export default Footer
 function FooterLinks() {
   const menuItems = ["Home", "Portfolio", "Contact"];
   return (
-    <div className="FooterLinksRootConteiner">
+    <div className="mainMenuRootConteiner">
       {menuItems.map((menuItem, index) => (
         <div key={index} className="singleMenuItem">
           {menuItem}
