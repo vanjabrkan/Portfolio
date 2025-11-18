@@ -2,15 +2,7 @@
 .headerAreaRoot {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
   align-items: center;
-}
-
-.mainMenuAndLoginButton {
-  display: flex;
-  flex: 1;
-  justify-content: end;
-  gap:15px;
 }
 
 /* Logo Styling */
@@ -19,58 +11,83 @@
   flex: 1;
   justify-content: start;
   align-items: center;
+  padding-left: 25px;
 }
 
 .logoImage {
-  width: 90px; /* promeni veličinu po želji */
+  width: 90px;
   height: auto;
 }
 
 /* main Menu Styling */
 .mainMenuRootConteiner {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  flex: 1;
+  justify-content: end;
+  gap: 5px;
+  padding: 15px 45px;
 }
 
 .singleMenuItem {
   font: 40px;
-    font-weight: bold;
+  font-weight: bold;
   cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+.loginMenuItem {
+  background-color: #dfb0b0;
 }
 
 .singleMenuItem:hover {
-  color: red
-}
-/* login Button Styling */
-.loginButtonRootConteiner {
-  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #b5a79a;
 }
 
-
-/* Buttons */
-.loginButton {
-  background: linear-gradient(15deg, #dfb0b0, #bd8fb3e1);
-  color: #3d361c;
-  border: none;
-  border-radius: 12px; /* Rounded corners for smooth, soft button appearance */
-  padding: 8px 24px; /* Inner spacing: height and width of the button */
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer; /* Mouse cursor changes to pointer */
-  transition: all 0.3s ease; /* Smooth animation for hover/active effects */
-
-}
-
-.loginButton:hover {
-  transform: translateY(
-    -2px
-  ); /* Button moves slightly up to create a “lifted” 3D effect */
-  
-}
-
-.loginButton:active {
+.singleMenuItem:active {
   transform: translateY(0); /* When clicking, button goes back down */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow becomes smaller again */
+}
+
+/* ========================== */
+/* RESPONSIVE FOR SMALL SCREENS */
+@media (max-width: 619px) {
+  .mainMenuRootConteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: #dfb0b0;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    width: min(12em, 100%);
+    z-index: 10;
+    border-left: 1px solid rgba(196, 146, 146, 0.4);
+    padding: 30px 0;
+    transition: right 300ms ease-out;
+  }
+
+  .mainMenuRootConteiner.shows {
+    right: 0;
+  }
+
+  .singleMenuItem {
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    padding: 20px 35px;
+  }
 }
