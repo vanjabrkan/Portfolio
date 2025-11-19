@@ -1,17 +1,21 @@
-import react from "react";
+import React from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+
 
 function Header(props) {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <div className="headerAreaRoot">
       <Logo />
-      <div className="burgerMenu">
+      <button id="open-sidebar" className="burgerMenu" onClick={() => setIsSidebarOpen(true)}>
         <FontAwesomeIcon icon={faBars} size="lg" />
-      </div>
-      <MainMenu />
+      </button>
+      <MainMenu isOpen={isSidebarOpen}
+        onClose={() => setIsSidebarOpen(false)}/>
     </div>
   );
 }
@@ -26,11 +30,14 @@ function Logo() {
   );
 }
 
-function MainMenu() {
+function MainMenu({ isOpen, onClose }) {
   const menuItems = ["Home", "Portfolio", "Contact"];
   const loginItem = "Login";
   return (
-    <div className="mainMenuRootConteiner">
+      <div className={`mainMenuRootConteiner ${isOpen ? "show" : ""}`}>
+      <div id="close-sidebar" onClick={onClose}><FontAwesomeIcon icon={faXmark} /></div>
+      
+      
       {menuItems.map((menuItem, index) => (
         <div key={index} className="singleMenuItem">
           {menuItem}

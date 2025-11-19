@@ -51,8 +51,32 @@
 }
 
 /* ========================== */
+/* OPEN/CLOSE SIDEBAR BUTTONS (HIDDEN BY DEFAULT) */
+/* ========================== */
+
+/* Burger menu (open sidebar) */
+#open-sidebar {
+  display: none; /* Hidden by default on desktop */
+  background: none; /* No background */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+/* Close sidebar button */
+#close-sidebar {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========================== */
 /* RESPONSIVE FOR SMALL SCREENS */
 @media (max-width: 619px) {
+  #open-sidebar,  #close-sidebar {
+    display: block;
+  }
+
   .mainMenuRootConteiner {
     display: flex;
     flex-direction: column;
@@ -70,7 +94,7 @@
     transition: right 300ms ease-out;
   }
 
-  .mainMenuRootConteiner.shows {
+  .mainMenuRootConteiner.show {
     right: 0;
   }
 
@@ -88,6 +112,18 @@
     display: flex;
     flex: 1;
     justify-content: end;
-    padding: 20px 35px;
+    align-items: end;
+    text-align: end;
+    padding-right: 35px;
+    padding-top: 25px;
+  }
+
+  .logoRootConteiner {
+    display: flex;
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 25px;
   }
 }

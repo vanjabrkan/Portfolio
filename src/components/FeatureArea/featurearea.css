@@ -3,7 +3,6 @@
   flex-direction: column;
   background-color: #dfb0b0;
   width: 100vw; /* full viewport width */
-  min-width: 100%; /* ensure no shrinking on small screens */
 }
 
 .featureAreaConteiner {
