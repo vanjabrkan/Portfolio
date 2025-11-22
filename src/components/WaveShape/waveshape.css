@@ -1,0 +1,14 @@
+
+@media (max-width: 768px) {
+  .wave-bottom {
+    display: none !important;
+  }
+}
+
+.elementor-shape svg {
+  display: block;
+}
+
+.wave-up {
+  margin-top: -5px; /* prekrije belu liniju */
+}

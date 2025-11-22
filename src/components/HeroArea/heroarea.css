@@ -91,4 +91,8 @@
     padding: 2rem;
     width: 100%;
   }
+
+  .leftAreaSubConteiner {
+    text-align: center
+  }
 }

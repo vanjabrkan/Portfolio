@@ -1,16 +1,32 @@
-export default function WaveShape({ color = "#dfb0b0", className = "", flip = false, bottomColor, ...props }) {
+import React from "react";
+import "./waveshape.css";
+
+export default function WaveShape({
+  color = "#dfb0b0",
+  className = "",
+  flip = false,
+  bottomColor,
+  ...props
+}) {
   return (
     <div
       className={`elementor-shape elementor-shape-bottom ${className}`}
       aria-hidden="true"
       {...props}
-      style={{ position: "relative" }} 
+      style={{ position: "relative", lineHeight: 0, fontSize: 0 }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"
         preserveAspectRatio="none"
-        style={flip ? { transform: "rotate(180deg)", transformOrigin: "center" } : {}}
+        style={{
+          display: "block",
+          width: "100%",
+          marginBottom: "-1px",
+          ...(flip
+            ? { transform: "rotate(180deg)", transformOrigin: "center" }
+            : {}),
+        }}
       >
         <path
           fill={color}
@@ -23,13 +39,15 @@ export default function WaveShape({ color = "#dfb0b0", className = "", flip = fa
       {/* Bottom background - if bottom color exist */}
       {bottomColor && (
         <div
+          className="wave-bottom"
           style={{
             position: "absolute",
-            bottom: 0,
             left: 0,
             width: "100%",
-            height: "5px", 
+            height: "8px",
             backgroundColor: bottomColor,
+bottom: flip ? 0 : "auto",   // ako je flip → filler ide DOLE
+top: flip ? "auto" : 0,      // ako nije flip → filler ide GORE
           }}
         />
       )}

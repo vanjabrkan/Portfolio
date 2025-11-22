@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <Navbar />
       <HeroArea />
-      <WaveShape color="#dfb0b0" flip bottomColor="#dfb0b0" className="wave-colorb"/>
+      <WaveShape color="#dfb0b0" flip bottomColor="#dfb0b0" />
       <FeatureArea />
-      <WaveShape color="#dfb0b0" className="wave-color" />
+      <WaveShape color="#dfb0b0"  bottomColor="#dfb0b0" className="wave-color wave-up" />
       <Footer />
     </div>
   );

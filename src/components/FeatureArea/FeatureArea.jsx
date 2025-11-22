@@ -4,7 +4,7 @@ import feature1 from "../../assets/feature1.jpg";
 import feature2 from "../../assets/feature2.jpg";
 import feature3 from "../../assets/feature3.jpg";
 
-function FeatureArea(props) {
+function FeatureArea() {
   const items = [
     {
       id: 1,
@@ -31,15 +31,16 @@ function FeatureArea(props) {
       <div className="featureAreaConteiner">
         <div className="featureAreaHeader">What I do: </div>
         <div className="featureAreaItems">
-          {items.map((item, index) => (
-            <div>
+          {items.map((item) => (
+            
               <FeatureItem
+               key={item.id}
                 title={item.title}
                 text={item.text}
                 image={item.image}
               />
-              <div />
-            </div>
+              
+        
           ))}
         </div>
       </div>
