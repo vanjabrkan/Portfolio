@@ -13,12 +13,12 @@ function Footer ()  {
 export default Footer
 
 function FooterLinks() {
-  const menuItems = ["Home", "Portfolio", "Contact"];
+  const footerItems = ["Home", "Portfolio", "Contact"];
   return (
-    <div className="mainMenuRootConteiner">
-      {menuItems.map((menuItem, index) => (
-        <div key={index} className="singleMenuItem">
-          {menuItem}
+    <div className="FooterItemsRootConteiner">
+      {footerItems.map((footerItem, index) => (
+        <div key={index} className="singleFooterItem">
+          {footerItem}
         </div>
       ))}
     </div>

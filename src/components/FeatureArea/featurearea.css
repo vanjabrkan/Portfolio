@@ -95,7 +95,7 @@
     gap: 20px;
     width: 100%;
     flex-wrap: wrap;
-        object-fit: cover;
+    object-fit: cover;
   }
 
   .LevelItemImageConteiner {
@@ -105,6 +105,6 @@
     flex-direction: row; /* stack items vertically */
     align-items: center;
     justify-content: center;
-        object-fit: cover;
+    object-fit: cover;
   }
 }
