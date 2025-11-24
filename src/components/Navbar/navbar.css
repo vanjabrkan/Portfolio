@@ -34,7 +34,7 @@
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 12px;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .loginMenuItem {
@@ -74,7 +74,8 @@
 /* ========================== */
 /* RESPONSIVE FOR SMALL SCREENS */
 @media (max-width: 619px) {
-  #open-sidebar,  #close-sidebar {
+  #open-sidebar,
+  #close-sidebar {
     display: block;
   }
 

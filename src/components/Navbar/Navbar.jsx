@@ -12,9 +12,8 @@ function Header() {
   return (
     <div className="headerAreaRoot">
       <Logo />
-      <BurgerMenu onOpen={() => setIsSidebarOpen(true)}/>
-      <MainMenu isOpen={isSidebarOpen}
-        onClose={() => setIsSidebarOpen(false)}/>
+      <BurgerMenu onOpen={() => setIsSidebarOpen(true)} />
+      <Navbar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
     </div>
   );
 }
@@ -31,35 +30,36 @@ function Logo() {
 
 function BurgerMenu({ onOpen }) {
   return (
-<button id="open-sidebar" className="burgerMenu" onClick={onOpen}>
-        <FontAwesomeIcon icon={faBars} size="lg" />
-      </button>
+    <button id="open-sidebar" className="burgerMenu" onClick={onOpen}>
+      <FontAwesomeIcon icon={faBars} size="lg" />
+    </button>
   );
 }
 
-function MainMenu({ isOpen, onClose }) {
-  const menuItems = [
-    { label: "Home", to: "/" },
-    { label: "CV", to: "/cv" },
-    { label: "Contact", to: "/contact" }
-  ];
-  const loginItem = "Login";
+function Navbar({ isOpen, onClose }) {
   return (
-      <div className={`mainMenuRootConteiner ${isOpen ? "show" : ""}`}>
-      <div id="close-sidebar" onClick={onClose}><FontAwesomeIcon icon={faXmark} /></div>
-      
-      
-      {menuItems.map((menuItem, index) => (
-        <Link
-          key={index}
-          to={menuItem.to}
-          className="singleMenuItem"
-          onClick={onClose}
-        >
-          {menuItem.label}
-        </Link>
-      ))}
-            <Link to="/login" className="singleMenuItem loginMenuItem" onClick={onClose}>
+    <div className={`mainMenuRootConteiner ${isOpen ? "show" : ""}`}>
+      <div id="close-sidebar" onClick={onClose}>
+        <FontAwesomeIcon icon={faXmark} />
+      </div>
+
+      <Link to="/" className="singleMenuItem" onClick={onClose}>
+        Home
+      </Link>
+
+      <Link to="/cv" className="singleMenuItem" onClick={onClose}>
+        CV
+      </Link>
+
+      <Link to="/contact" className="singleMenuItem" onClick={onClose}>
+        Contact
+      </Link>
+
+      <Link
+        to="/login"
+        className="singleMenuItem loginMenuItem"
+        onClick={onClose}
+      >
         Login
       </Link>
     </div>
