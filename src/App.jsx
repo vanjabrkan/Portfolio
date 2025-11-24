@@ -1,20 +1,20 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import HeroArea from "./components/HeroArea/HeroArea";
-import FeatureArea from "./components/FeatureArea/FeatureArea";
-import Footer from "./components/Footer/Footer";
-import WaveShape from "./components/WaveShape/WaveShape";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home.jsx";
+import CV from "./Pages/CV.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Login from "./pages/Login.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <HeroArea />
-      <WaveShape color="#dfb0b0" flip bottomColor="#dfb0b0" />
-      <FeatureArea />
-      <WaveShape color="#dfb0b0"  bottomColor="#dfb0b0" className="wave-color wave-up" />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cv" element={<CV />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 

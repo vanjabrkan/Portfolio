@@ -4,16 +4,15 @@ import logo from "../../assets/logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-
-function Header(props) {
+function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
     <div className="headerAreaRoot">
       <Logo />
-      <button id="open-sidebar" className="burgerMenu" onClick={() => setIsSidebarOpen(true)}>
-        <FontAwesomeIcon icon={faBars} size="lg" />
-      </button>
+      <BurgerMenu onOpen={() => setIsSidebarOpen(true)}/>
       <MainMenu isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}/>
     </div>
@@ -30,8 +29,20 @@ function Logo() {
   );
 }
 
+function BurgerMenu({ onOpen }) {
+  return (
+<button id="open-sidebar" className="burgerMenu" onClick={onOpen}>
+        <FontAwesomeIcon icon={faBars} size="lg" />
+      </button>
+  );
+}
+
 function MainMenu({ isOpen, onClose }) {
-  const menuItems = ["Home", "Portfolio", "Contact"];
+  const menuItems = [
+    { label: "Home", to: "/" },
+    { label: "CV", to: "/cv" },
+    { label: "Contact", to: "/contact" }
+  ];
   const loginItem = "Login";
   return (
       <div className={`mainMenuRootConteiner ${isOpen ? "show" : ""}`}>
@@ -39,11 +50,18 @@ function MainMenu({ isOpen, onClose }) {
       
       
       {menuItems.map((menuItem, index) => (
-        <div key={index} className="singleMenuItem">
-          {menuItem}
-        </div>
+        <Link
+          key={index}
+          to={menuItem.to}
+          className="singleMenuItem"
+          onClick={onClose}
+        >
+          {menuItem.label}
+        </Link>
       ))}
-      <div className="singleMenuItem loginMenuItem">{loginItem}</div>
+            <Link to="/login" className="singleMenuItem loginMenuItem" onClick={onClose}>
+        Login
+      </Link>
     </div>
   );
 }
