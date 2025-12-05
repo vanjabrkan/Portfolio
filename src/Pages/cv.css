@@ -1,0 +1,65 @@
+.cv-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #dfb0b0;
+  border-radius: 40px;
+}
+
+.cv-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cv-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.cv-title h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.cv-title h2 {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.cv-section {
+  margin-top: 40px;
+}
+
+.cv-item {
+  margin-bottom: 20px;
+}
+
+.cv-list {
+  margin-left: 30px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.download-btn {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #5f2222;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
