@@ -23,7 +23,7 @@ function HeaderInfo() {
     <section className="cv-header">
       <div className="cv-title">
         <h1>Vanja Brkan Stankic</h1>
-        <h2>Frontend Developer</h2>
+        <h2>Frontend and QA/Test Developer.</h2>
         <img src={VanjaCV} alt="Profile" className="cv-photo" />
 
         <p>
