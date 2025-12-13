@@ -135,7 +135,7 @@ function Languages() {
         <ul>
           <li>Serbo-Croatian: Native language</li>
           <li>English: Fluent</li>
-          <li>German: B2</li>
+          <li>German: B1 - B2</li>
         </ul>
       </div>
     </section>
