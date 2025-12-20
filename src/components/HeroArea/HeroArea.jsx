@@ -16,8 +16,8 @@ function HeroArea(props) {
 export default HeroArea;
 
 function LeftArea() {
-  const subHeader = ` Hello, I'm Vanja,\n a Frontend and QA/Test Developer.`;
-  const subDescription = `Welcome to my portfolio. I'm a frontend developer focused on building clean and functional websites.`;
+  const subHeader = ` Hello, I'm Vanja,\n a Test Automation Developer with Frontend expertise.`;
+  const subDescription = `Welcome to my portfolio. I combine deep QA experience with developer skills to build reliable, high-quality software.`;
   //
   return (
     <div className="leftAreaRoot">

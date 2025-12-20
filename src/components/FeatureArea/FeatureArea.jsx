@@ -8,20 +8,20 @@ function FeatureArea() {
   const items = [
     {
       id: 1,
-      title: "Responsive",
-      text: "I create easy-to-use and responsive sites that work across all devices.",
+      title: "Test Automation & Quality Engineering",
+      text: "I design and maintain robust automated test frameworks (UI, API, and E2E) that ensure fast feedback, reliable releases, and long-term maintainability.",
       image: feature1,
     },
     {
       id: 2,
-      title: "Modern Technologies",
-      text: "I use the latest web development tools and frameworks to ensure your website is up to date.",
+      title: "Frontend Development with a QA Mindset",
+      text: "I build and test modern frontend applications, writing clean, testable code while catching issues early through thoughtful architecture and automation.",
       image: feature2,
     },
     {
       id: 3,
-      title: "Custom Design",
-      text: "Every website I create is tailored to fit the specific needs and goals of each project, providing a unique online experience.",
+      title: "Quality & Process Innovation",
+      text: "I leverage modern tools and best practices to improve testing workflows, streamline development processes, and ensure high-quality, reliable web applications.",
       image: feature3,
     },
   ];

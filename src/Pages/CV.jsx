@@ -23,13 +23,8 @@ function HeaderInfo() {
     <section className="cv-header">
       <div className="cv-title">
         <h1>Vanja Brkan Stankic</h1>
-        <h2>Frontend and QA/Test Developer.</h2>
+        <h2>Test Automation Developer with Frontend expertise</h2>
         <img src={VanjaCV} alt="Profile" className="cv-photo" />
-
-        <p>
-          Passionate developer with experience in React, UI/UX, and modern
-          frontend design.
-        </p>
       </div>
     </section>
   );
@@ -193,7 +188,7 @@ function DownloadButton() {
         download
         className="download-btn"
       >
-        Download PDF
+        Download CV
       </a>
     </div>
   );
