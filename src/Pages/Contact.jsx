@@ -4,13 +4,22 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-    const sendEmail = (e) => {
-    e.preventDefault();
+const [sending, setSending] = React.useState(false);
 
-    emailjs.sendForm('service_o1sb367', 'template_contact_us', e.target, 'yVnUsfmRtNB0U-enw')
-      .then(() => alert("Message sent!"))
-      .catch(() => alert("Error sending message"));
-  };
+const sendEmail = (e) => {
+  e.preventDefault();
+  setSending(true);
+
+  emailjs.sendForm('service_o1sb367', 'template_xxxx', e.target, 'user_XXXXX')
+    .then(() => {
+      setSending(false);
+      alert("Message sent!");
+    })
+    .catch(() => {
+      setSending(false);
+      alert("Error sending message");
+    });
+};
 
   return (
     <section className="contact">
@@ -46,7 +55,9 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Send message</button>
+        <button type="submit" disabled={sending}>
+  {sending ? "Sending..." : "Send message"}
+</button>
         <p className="privacy-note">
   Your data will only be used to contact me. I respect your privacy.
 </p>
