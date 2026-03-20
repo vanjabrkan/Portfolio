@@ -10,7 +10,7 @@ const sendEmail = (e) => {
   e.preventDefault();
   setSending(true);
 
-  emailjs.sendForm('service_o1sb367', 'template_xxxx', e.target, 'user_XXXXX')
+  emailjs.sendForm('service_o1sb367', 'template_contact_us', e.target, 'yVnUsfmRtNB0U-enw')
     .then(() => {
       setSending(false);
       alert("Message sent!");
