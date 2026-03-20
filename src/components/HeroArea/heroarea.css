@@ -13,7 +13,7 @@
   justify-content: end;
 }
 
-.leftAreaSubConteiner {
+.leftAreaSubContainer {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -64,7 +64,7 @@
   display: flex;
 }
 
-.rightAreaConteiner {
+.rightAreaContainer {
   object-fit: cover;
   width: 100%;
   max-width: 450px; /* responsive limit */
@@ -86,13 +86,13 @@
     text-align: center; /* optional: center text for small screens */
   }
 
-  .leftAreaConteiner,
-  .rightAreaConteiner {
+  .leftAreaContainer,
+  .rightAreaContainer {
     padding: 2rem;
     width: 100%;
   }
 
-  .leftAreaSubConteiner {
+  .leftAreaSubContainer {
     text-align: center
   }
 }

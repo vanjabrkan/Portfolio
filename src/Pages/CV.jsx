@@ -70,20 +70,30 @@ function Experience() {
       <h3>Experience</h3>
 
       <div className="cv-item">
+        <h4>Relocation & Professional Development</h4>
+        <span>2024 — Present</span>
+        <div className="cv-list cv-item">
+          <ul>
+            <li>Relocated to Germany and focused on intensive German language learning (Goethe-Zertifikat B2 achieved)</li>
+            <li>Completed Full-Stack Web Development Bootcamp and Playwright Automation Testing training (Udemy)</li>
+            <li>Currently expanding my knowledge of Python (100 Days of Code™: The Complete Python Pro Bootcamp, Udemy)</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div className="cv-item">
         <h4>Software Test Developer — LEVI 9 GLOBAL SOURCING BALKAN DOO</h4>
         <span>2021 — 2024</span>
         <p>Responsibilities: </p>
         <div className="cv-list cv-item">
           <ul>
-            <li>Utilized Swagger for validation of API endpoints</li>
-            <li>Performed API testing in Postman</li>
-            <li>
-              Developed End-to-End tests utilizing Cypress and Selenium
-              WebDriver
-            </li>
+            <li>Conducted manual testing, including performance, smoke, regression, and user acceptance testing (UAT), to ensure high-quality software delivery</li>
+            <li>Performed API testing using Postman and Swagger</li>
+            <li> Developed automated E2E tests using Cypress and Selenium WebDriver; created REST API tests with Cucumber</li>
             <li>Created REST API tests with Cucumber</li>
-            <li>Designed test cases and reported bugs effectively</li>
-            <li>Collaborated in Scrum methodology for agile development</li>
+            <li>Designed test cases and reported bugs efficiently using Xray in JIRA</li>
+            <li>Collaborated with international team in Agile Scrum methodology to ensure high-quality software delivery</li>
           </ul>
         </div>
       </div>
@@ -130,7 +140,7 @@ function Languages() {
         <ul>
           <li>Serbo-Croatian: Native language</li>
           <li>English: Fluent</li>
-          <li>German: B1 - B2</li>
+          <li>German: B2</li>
         </ul>
       </div>
     </section>
@@ -144,6 +154,9 @@ function Certifications() {
 
       <div className="cv-list cv-item">
         <ul>
+          <li>
+            GOETHE-ZERTIFIKAT B2
+          </li>
           <li>
             Playwright JS Automation Testing from Scratch with Framework
             (Issuing organization: Udemy)

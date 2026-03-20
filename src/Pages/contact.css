@@ -5,6 +5,12 @@
   justify-content: center;
   align-items: center;
 }
+.privacy-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
 
 form {
   max-width: 600px;
